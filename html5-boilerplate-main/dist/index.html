@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title></title>
+  <title>mollybrown.com</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -21,14 +21,155 @@
 
   <link rel="manifest" href="site.webmanifest">
   <meta name="theme-color" content="#fafafa">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Gotu&family=Lexend+Tera:wght@400;500;700&family=Spectral:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
+  <header class="introduction">
+    <div class="content-wrapper">
+      <h1>Molly Brown</h1>
+      <figure>
+        <a href="#">
+          <!-- need to check on the link below-->
+          <img src="../../img/pug-cropped.jpg" alt="pug in unicorn costume">
+        </a>
+      </figure>
+      <nav>
+        <ul>
+          <li><a href="../../index.html#about">About</a></li>
+          <li><a href="../../index.html#skills">Skills</a></li>
+          <li><a href="../../index.html#projects">Projects</a></li>
+          <li><a href="../../index.html#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-  <!-- Add your site or application content here -->
-  <p>Hello world! This is HTML5 Boilerplate.</p>
+  <main>
   <script src="js/vendor/modernizr-3.12.0.min.js"></script>
   <script src="js/app.js"></script>
+  <main>
+    <section id="about-me">
+        <div class="content-wrapper">
+            <h2>Hi! I'm Molly and I'm a front-end developer based in Charlotte, NC.</h2>
+            <div class="paragraph-about">
+                <p>I am seeking a team where I can bring my passions for accessible web design and creativity to web development.                
+                <br> When I’m not working, pursuing side projects or getting lost in the art of web development, I can be found running, hiking, traveling, and leaving dishes in the sink.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="content-wrapper">
+            <h2>Projects.</h2>
+        
+            <div class="project-piece">
+                <img src="../../img/rogue-pickings.png" alt="Rogue Pickings website picture">
+                <h3>Rogue Pickings</h3>
+                <p>Rogue Pickings is a sample single-page website for a food business. This was originally a static website, which was then converted into a responsive design using Flexbox.  
+                </p>
+                <a href="https://learningcoding2022.github.io/less-8-coding-responsive-rogue-pickings/" target="_BLANK"></a>
+            </div>
+
+            <div class="project-piece">
+              <img src="../../img/unplugged.png" alt="Unplugged website picture">
+              <h3>Unplugged</h3>
+              <p>Unplugged is a multi-page responsive website that adapts to various mobile, tablet, and desktop screens. 
+              </p>
+              <a href="https://learningcoding2022.github.io/less-9-unplugged-responsive/" target="_BLANK"></a>
+            </div>
+
+            <div class="project-piece">
+              <img src="../../img/guess-the-word.png" alt="Guess the Word webpage">
+              <h3>Guess the Word Game</h3>
+              <p>Players guess the word by entering one letter at a time. If the player
+                    guesses all the letters correctly before they use up their allotted guess, they
+                    2 win!
+              </p>
+              <a href="https://skillcrush.github.io/guess-the-word/" target="_BLANK"></a>
+            </div>
+
+            <div class="project-piece">
+              <img src="../../img/repo-gallery.png" alt="Repo Gallery webpage">
+              <h3>GitHub Repo Gallery</h3>
+              <p>The GitHub Repo Gallery pulls data from my GitHub profile to create a gallery of repos. 
+              </p>
+              <a href=https://learningcoding2022.github.io/JS-Lesson-14-Github-Repo-Gallery/ target="_BLANK"></a>
+            </div>
+
+            <div class="project-piece">
+              <img src="../../img/sticky-note-app.png" alt="Sticky Note webpage">
+              <h3>Sticky Note App</h3>
+              <p>The Sticky Note App is an interactive app that lets users create, edit, and delete “sticky notes” on their computer to keep track of to-do items.
+              </p>
+            <a href="https://skillcrush.github.io/guess-the-word/" target="_BLANK"></a>
+    </section>
+
+    <section id="skills-tools">
+      <div class="content-wrapper">
+        <div class="skills-tools">
+          <h3>Skills & Tools</h3>
+          <ul>
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>Flexbox</li>
+            <li>Responsive Web Development</li>
+            <li>Javascript</li>
+            <li>CodeSandbox</li>
+            <li>React</li>
+            <li>Git & Github</li>
+            <li>APIs</li>
+            <li>Chrome DevTools</li>
+            <li>Visual Studio Code</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+</main>
+
+<footer>
+  <div class="content-wrapper">
+    <div class="footer-content">
+      <div class="contact">
+        <h4>Contact Me!</h4>
+        <address>
+          <p>
+            570-909-7476<br>
+            brownmolly109@gmail.com
+          </p>
+        </address>
+      </div>
+      <div class="contact-image">
+        <figure>
+          <img src="../../img/chipmunk-coffee-cropped.jpg" alt="chipmunk drinking coffee">
+        </figure>
+      </div>
+      <div class="social">
+        <h4>Social</h4>
+        <div class="social-icons">
+          <p>
+            <a href="https://github.com/learningcoding2022" target="_blank"><i class="fab fa-github"></i></a>
+          </p>
+          <p>
+            <a href="https://www.linkedin.com/in/molly-brown-97877492/" target="_blank"><i class="fab fa-linkedin"></i></a>
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--footer content ends-->
+  </div>
+  <!--footer content-wrapper ends-->
+  <div class="copyright">
+    <p>Copyright 2023 | Molly Brown </p>
+  </div>
+</footer>
 
 </body>
 
