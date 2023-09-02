@@ -23,31 +23,39 @@
   <meta name="theme-color" content="#fafafa">
 
   <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Gotu&family=Lexend+Tera:wght@400;500;700&family=Spectral:wght@600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/main.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alata&family=Gotu&family=Lekton:wght@400;700&family=Nunito+Sans:opsz@6..12&family=Spectral:wght@600;700&display=swap" rel="stylesheet">
+<!--Do I need the links below again?-->
+<script src="https://kit.fontawesome.com/e9a0946930.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="css/normalize.css">
+<link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
-  <header class="introduction">
+  <header>
     <div class="content-wrapper">
-      <h1>Molly Brown</h1>
-      <figure>
-        <a href="#">
-          <!-- need to check on the link below-->
-          <img src="../../img/pug-cropped.jpg" alt="pug in unicorn costume">
-        </a>
-      </figure>
       <nav>
         <ul>
-          <li><a href="../../index.html#about">About</a></li>
-          <li><a href="../../index.html#skills">Skills</a></li>
-          <li><a href="../../index.html#projects">Projects</a></li>
-          <li><a href="../../index.html#contact">Contact</a></li>
+          <!--links are not working to various sections-->
+          <li><a href="#about-me">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills-tools">Skills</a></li>
+          <li><a href="#contact" id="contact-link">Contact</a></li>
         </ul>
-      </nav>
+      </nav>      
+
+      <figure>
+        <!---<a href="#"--->
+          <!-- need to check on the link below-->
+          <img src="../../img/pug-cropped.jpg" alt="pug in unicorn costume">
+        <!--</a>-->
+      </figure>
+
+      <div class="introduction">
+        <h1>Hi, I'm Molly Brown!</h1>
+        <h2> I'm a front-end developer who creates <span>fun, engaging, and functional websites</span> in Charlotte, NC.</h2>
+      </div>
     </div>
   </header>
 
@@ -56,60 +64,119 @@
   <script src="js/app.js"></script>
   <main>
     <section id="about-me">
-        <div class="content-wrapper">
-            <h2>Hi! I'm Molly and I'm a front-end developer based in Charlotte, NC.</h2>
-            <div class="paragraph-about">
-                <p>I am seeking a team where I can bring my passions for accessible web design and creativity to web development.                
-                <br> When I’m not working, pursuing side projects or getting lost in the art of web development, I can be found running, hiking, traveling, and leaving dishes in the sink.
-                </p>
-            </div>
+      <div class="content-wrapper">
+        <div class="paragraph-about">
+            <figure>
+              <img src="../../img/profile-pic.jpg" alt="profile picture of Molly Brown">
+            </figure>
+            <h3>About Me</h3>
+            <p>I am seeking a team where I can bring my passions for accessible web design and creativity to web development.                
+            <br> When I’m not working, pursuing side projects or getting lost in the art of web development, I can be found running, hiking, traveling, and leaving dishes in the sink.
+            </p>
         </div>
+      </div>
     </section>
 
     <section id="projects">
-        <div class="content-wrapper">
-            <h2>Projects.</h2>
-        
+      <div class="content-wrapper">
+        <h3>Projects.</h3>
+        <div class="portfolio-wrapper">
+          <div class="portfolio-item-wrapper">
             <div class="project-piece">
-                <img src="../../img/rogue-pickings.png" alt="Rogue Pickings website picture">
-                <h3>Rogue Pickings</h3>
-                <p>Rogue Pickings is a sample single-page website for a food business. This was originally a static website, which was then converted into a responsive design using Flexbox.  
-                </p>
-                <a href="https://learningcoding2022.github.io/less-8-coding-responsive-rogue-pickings/" target="_BLANK"></a>
+              <img src="../../img/rogue-pickings.png" alt="Rogue Pickings website picture">
+              <h4>Rogue Pickings</h4>
+              <p class="project-description">Rogue Pickings is a sample single-page website for a food business. This was originally a static website, which was then converted into a responsive design using Flexbox.  
+              </p>
+              <p class="skills">
+                <span>Skills:</span>
+                CSS3, HTML5
+              </p>
+              <p class="tools">
+                <span>Tools:</span>
+                Text editors
+              </p>
+              <a class="project-link" href="https://learningcoding2022.github.io/less-8-coding-responsive-rogue-pickings/" target="_BLANK">Live Page</a>
             </div>
-
+          </div>
+          <div class="portfolio-item-wrapper">
             <div class="project-piece">
               <img src="../../img/unplugged.png" alt="Unplugged website picture">
-              <h3>Unplugged</h3>
-              <p>Unplugged is a multi-page responsive website that adapts to various mobile, tablet, and desktop screens. 
+              <h4>Unplugged</h4>
+              <p class="project-description">Unplugged is a multi-page responsive website that adapts to various mobile, tablet, and desktop screens. 
               </p>
-              <a href="https://learningcoding2022.github.io/less-9-unplugged-responsive/" target="_BLANK"></a>
+              <p class="skills">
+                <span>Skills:</span>
+                CSS3, Flexbox, HTML5, Media Queries, Responsive Typography
+              </p>
+              <p class="tools">
+                <span>Tools:</span>
+                GitHub
+                Text editors
+              </p>
+              <a class="project-link" href="https://learningcoding2022.github.io/less-9-unplugged-responsive/" target="_BLANK">Live Page</a>
             </div>
-
+          </div>  
+          <div class="portfolio-item-wrapper">
             <div class="project-piece">
               <img src="../../img/guess-the-word.png" alt="Guess the Word webpage">
-              <h3>Guess the Word Game</h3>
-              <p>Players guess the word by entering one letter at a time. If the player
-                    guesses all the letters correctly before they use up their allotted guess, they
-                    2 win!
+              <h4>Guess the Word Game</h4>
+              <p class="project-description">Players guess the word by entering one letter at a time. If the player
+                  guesses all the letters correctly before they use up their allotted guess, they
+                  2 win!
               </p>
-              <a href="https://skillcrush.github.io/guess-the-word/" target="_BLANK"></a>
+              <p class="skills">
+                <span>Skills:</span>
+                Manipulate the DOM, Vanilla JavaScript
+              </p>
+              <p class="tools">
+                <span>Tools:</span>
+                GitHub
+              </p>
+              <a class="project-link" href="https://skillcrush.github.io/guess-the-word/" target="_BLANK">Live Page</a>
+            </div>
+          </div>
+          <!--continue here-->
+          <div class="portfolio-item-wrapper">
+              <div class="project-piece">
+                <img src="../../img/repo-gallery.png" alt="Repo Gallery webpage">
+                <h4>GitHub Repo Gallery</h4>
+                <p class="project-description">The GitHub Repo Gallery pulls data from my GitHub profile to create a gallery of repos. 
+                </p>
+                <p class="skills">
+                  <span>Skills:</span>
+                  APIs, Manipulate the DOM
+                </p>
+                <p class="tools">
+                  <span>Tools:</span>
+                  GitHub
+                </p>
+                <a class="project-link" href="https://learningcoding2022.github.io/JS-Lesson-14-Github-Repo-Gallery/" target="_BLANK">Live Page</a>
+              </div>
             </div>
 
-            <div class="project-piece">
-              <img src="../../img/repo-gallery.png" alt="Repo Gallery webpage">
-              <h3>GitHub Repo Gallery</h3>
-              <p>The GitHub Repo Gallery pulls data from my GitHub profile to create a gallery of repos. 
-              </p>
-              <a href=https://learningcoding2022.github.io/JS-Lesson-14-Github-Repo-Gallery/ target="_BLANK"></a>
+            <div class="portfolio-item-wrapper">
+              <div class="project-piece">
+                <img src="../../img/sticky-note-app.png" alt="Sticky Note webpage">
+                <h4>Sticky Note App</h4>
+                <p class="project-description">The Sticky Note App is an interactive app that lets users create, edit, and delete “sticky notes” on their computer to keep track of to-do items.
+                </p>
+                <p class="skills">
+                  <span>Skills:</span>
+                  ES6
+                  JSX
+                  Managing data flow
+                  Manipulate the DOM
+                </p>
+                <p class="tools">
+                  <span>Tools:</span>
+                  CodeSandbox
+                </p>
+                <a class="project-link" href="https://skillcrush.github.io/guess-the-word/" target="_BLANK">Live Page</a>
+              </div>
             </div>
-
-            <div class="project-piece">
-              <img src="../../img/sticky-note-app.png" alt="Sticky Note webpage">
-              <h3>Sticky Note App</h3>
-              <p>The Sticky Note App is an interactive app that lets users create, edit, and delete “sticky notes” on their computer to keep track of to-do items.
-              </p>
-            <a href="https://skillcrush.github.io/guess-the-word/" target="_BLANK"></a>
+          </div>
+        </div>
+      </div>  
     </section>
 
     <section id="skills-tools">
@@ -134,11 +201,12 @@
     </section>
 </main>
 
-<footer>
+<footer id="contact">
   <div class="content-wrapper">
     <div class="footer-content">
       <div class="contact">
-        <h4>Contact Me!</h4>
+        <h3>Contact Me!</h3>
+        <p>Let's chat over coffee.</p>
         <address>
           <p>
             570-909-7476<br>
@@ -170,6 +238,17 @@
     <p>Copyright 2023 | Molly Brown </p>
   </div>
 </footer>
+<!--Do I still need this from unplugged?-->
+<script src="vendor/modernizr-3.11.2.min.js"></script>
+<script src="js/plugins.js"></script>
+<script src="js/main.js"></script>
+
+<!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+<script>
+  window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+  ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
+</script>
+<script src="https://www.google-analytics.com/analytics.js" async></script>
 
 </body>
 
