@@ -526,10 +526,10 @@ footer .copyright {
     margin: 100px 0;
   }
 
-  h1 {
+  header h1 {
     font-size: 3em;
     padding-top: 20px;
-    color: pink;
+    color: #351D77;
   }
   /* The H1 font is being overwwritten*/
 
