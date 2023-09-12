@@ -373,7 +373,7 @@ footer .copyright {
 }
 
 .project-piece h4 {
-  margin: 0, 20px, 0, 40px;
+  margin: 0 20px 0 40px;
 }
 
 
@@ -589,7 +589,7 @@ footer .copyright {
     display: flex;
     justify-content: space-around;
     flex-flow: wrap;
-    align-items: flex-start;
+    align-items: center;
   }
 
   .paragraph-about {
@@ -664,7 +664,6 @@ footer .copyright {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    flex-direction: row wrap;
   }
 
   #contact .contact-info {
@@ -730,15 +729,6 @@ footer .copyright {
   h2 {
     /* change font-size */
     text-align: left;
-  }
-  
-  h3, 
-  h4 {
-    /* change font-size and line height */
-  }
-
-  p {
-  /* change font-size and line height */
   }
 
   /*Header*/
