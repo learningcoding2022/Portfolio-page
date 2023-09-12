@@ -181,14 +181,6 @@ header .content-wrapper {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-
-}
-
-header figure {
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 header img {
@@ -197,6 +189,14 @@ header img {
   display: flex;
   align-items: center;
   border: 7px double #351D77;
+}
+
+.header-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  padding-top: 40px;
 }
 
 header nav {
@@ -270,7 +270,8 @@ footer .contact-info p {
 }
 
 #contact img {
-  width: 60%;
+/*changed width from 60% to 100% after emailing skillcrush*/
+  width: 100%;
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -550,6 +551,8 @@ footer .copyright {
   header .content-wrapper {
     width: 100%;
     justify-content: space-between;
+    padding-top: 0px;
+    background-color: #E8F0E4;
   }
 
   header img {
@@ -632,7 +635,7 @@ footer .copyright {
   /*Footer*/
 
   footer {
-    padding: 140px 0 80px 0;
+    padding: 100px 0 80px 0;
     display: flex;
     justify-content: center;
     text-align: center;
@@ -672,6 +675,7 @@ footer .copyright {
     color: #351D77;
     text-align: center;
     font-size: 1em;
+    padding-right: 40px;
   }
 
   #contact .contact-image {
@@ -681,6 +685,7 @@ footer .copyright {
   #contact .social-icons {
     width: 12.5em;
     justify-content: space-around;
+    padding-left: 40px;
   }
 
   footer .copyright {
@@ -690,7 +695,6 @@ footer .copyright {
     justify-content: center;
     font-size: 1em;
   }
-
   
   .contact-content {
     display: flex;
@@ -701,6 +705,8 @@ footer .copyright {
   .contact-content h4 {
     font-size: 1.5em;
   }
+
+}
 
     /* ==========================================================================
    Desktop
@@ -713,12 +719,17 @@ footer .copyright {
   header {
     padding: 15px 0;
   }
-  .content-wrapper {
+  header .content-wrapper {
     max-width: 960px;
+  }
+
+  h1 {
+    text-align: left;
   }
 
   h2 {
     /* change font-size */
+    text-align: left;
   }
   
   h3, 
@@ -740,7 +751,9 @@ footer .copyright {
   }
 
   header .content-wrapper {
-    justify-content: flex-end;
+    max-width: 80%;
+    justify-content: center;
+    /*if you want on right use flex-end*/
     padding-top: 0px;
   }
 
@@ -748,14 +761,14 @@ footer .copyright {
     display: flex;
     justify-content: space-around;
     flex-direction: row-reverse;
-    align-items: flex-start;
+    align-items: center;
     background-color: #E8F0E4;
     margin-top: 0px;
     margin-bottom: 80px;
   }
 
   .header-content img {
-    width: 35%;
+    width: 30%;
     border: 7px double #351D77;
     border-radius: 50%;
     justify-content: space-around;
@@ -763,12 +776,12 @@ footer .copyright {
 
   header nav {
     width: 45%;
-    justify-content: flex-end;
     background-color: #E8F0E4;
+    padding-bottom: 20px;
   }
 
   .introduction {
-    width: 45%;
+    width: 55%;
   }
 
   .introduction h1 {
@@ -784,20 +797,21 @@ footer .copyright {
   }
 
   /*About Me*/
-  aside .content-wrapper {
-    justify-content: space-around;
-  }
 
-  aside .content-wrapper .form-description,
-  aside .content-wrapper .form {
-    width: 30%;
-  }
-
-  .form-description p {
-    font-size: 1.125em;
+  #about-me .content-wrapper {
+    max-width: 65%;
+    align-items: center;
   }
 
   /*Projects*/
+
+  #projects .content-wrapper {
+    max-width: 85%;
+  }
+
+  #projects h3 {
+    padding-bottom: 60px;
+  }
 
   .project-piece {
     width: 30%;
@@ -805,6 +819,9 @@ footer .copyright {
 
   /*Skills and Tools*/
 
+  #skills-tools .content-wrapper {
+    max-width: 65%;
+  }
 
   /*Footer*/
 
@@ -812,25 +829,53 @@ footer .copyright {
     padding: 80px 0 80px 0;
   }
 
+  #contact {
+    display: flex;
+    justify-content: center;
+  }
+
   #contact .content-wrapper {
-    max-width: 65%;
-    background-color: pink;
-  
+    max-width: 60%;
+    background-color: #E8F0E4;
+    justify-content: center;
   }
 
   #contact .footer-content {
+    max-width: 100%;
     display: flex;
     justify-content: space-between;
-    padding-top: 0px;
-    padding-bottom: 0px;
+    margin-right: 20px;
+    margin-left: 20px;
   }
 
-  #contact img {
-    width: 75%;
+  #contact .contact-image {
+    width: 40%;
     display: flex;
     justify-content: center;
-    border-radius: 50%;
-    border: 7px double #351D77;
+  }
+
+  #contact .contact-info {
+    width: 20%;
+  }
+
+  #contact .social {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+  }
+
+  .social {
+    width: 20%;
+    background-color: #E8F0E4;
+  }
+
+  #contact .social-icons {
+    justify-content: space-around;
+    padding: 0px;
+  }
+
+  #contact .contact-info p {
+    padding: 0px;
   }
 
 }
