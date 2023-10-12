@@ -15,7 +15,8 @@ html {
   color: #351D77;
   font-size: 1em;
   line-height: 1.4;
-  scroll-behavior: smooth;  
+  scroll-behavior: smooth;
+  box-sizing: border-box;  
 }
 
 /*
@@ -359,6 +360,7 @@ footer .copyright {
   justify-content: center;
   text-align: center;
   flex-flow: row wrap;
+  box-sizing: border-box; 
 }
 
 #projects p {
@@ -371,6 +373,7 @@ footer .copyright {
 }
 
 .portfolio-wrapper {
+  width: 90%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -383,6 +386,7 @@ footer .copyright {
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  box-sizing: border-box; 
 }
 
 .project-piece h4 {
