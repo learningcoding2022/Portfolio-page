@@ -202,7 +202,7 @@ header img {
 }
 
 header nav {
-  width: 60%;
+  width: 100%;
   font-size: 1.25em;
   font-weight: 700;
   text-transform: uppercase;
@@ -216,11 +216,12 @@ header nav ul {
   display: flex;
   justify-content: space-around;
   width: 100%;
+  padding-left: 0px;
+  flex-wrap: wrap;
 }
 
 header nav ul li {
   font-size: 0.70em;
-  padding-right: 15px;
   font-weight: bold;
   text-transform: uppercase;
 }
@@ -360,7 +361,6 @@ footer .copyright {
   justify-content: center;
   text-align: center;
   flex-flow: row wrap;
-  box-sizing: border-box; 
 }
 
 #projects p {
@@ -373,7 +373,7 @@ footer .copyright {
 }
 
 .portfolio-wrapper {
-  width: 90%;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -386,7 +386,10 @@ footer .copyright {
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  box-sizing: border-box; 
+}
+
+.project-piece img {
+  box-sizing: border-box;
 }
 
 .project-piece h4 {
@@ -434,6 +437,10 @@ footer .copyright {
   font-family: 'Nunito Sans', sans-serif;
   font-size: 1.25em;
   line-height: 1.5;
+}
+
+.skills-tools ul {
+  padding-left: 0px;
 }
 
 .tools  {
