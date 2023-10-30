@@ -823,8 +823,21 @@ footer .copyright {
   /*About Me*/
 
   #about-me .content-wrapper {
-    max-width: 65%;
+    max-width: 85%;
     align-items: center;
+  }
+
+  #about-me img {
+    max-width: 30%;
+  }
+
+  #about-me h3 {
+    justify-content: center;
+    width: 100%;
+  }
+
+  .paragraph-about {
+    width: 55%;
   }
 
   /*Projects*/
