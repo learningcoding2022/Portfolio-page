@@ -618,12 +618,12 @@ footer .copyright {
   .paragraph-about {
     display: flex;
     flex-flow: column;
-    width: 40%;
+    width: 90%;
   }
 
   #about-me h3 {
-    width: 70%;
-    margin-top: 0;
+    width: 100%;
+    margin-top: 20px;
   }
 
   #about-me img {
